@@ -35,6 +35,33 @@ img {
     cursor: pointer;
 }
 
+.outside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.outside a {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: .5em 1em;
+    background-color: #2B2F38;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 10;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.outside img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
 
 
 @keyframes blink {
