@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>$EdgeSol</title>
+  </head>
+  <body>
+    <img src="/EDGE-SITE-DESKTOP.png" usemap="#image-map" class="desktop" />
+    <img src="/EDGE-SITE-MOBILE.png" usemap="#image-map2" class="mobile" />
+
+    <div class="desktop">
+      <map name="image-map" class="desktop">
+        <area
+          id="area1"
+          target=""
+          alt=""
+          title=""
+          href="#"
+          coords="1790,18,1904,120"
+          shape="rect"
+        />
+        <area
+          id="area2"
+          target=""
+          alt=""
+          title=""
+          href="https://t.me/edgesolportal"
+          coords="1784,133,1907,241"
+          shape="rect"
+        />
+        <area
+          id="area3"
+          target=""
+          alt=""
+          title=""
+          href="https://x.com/edgesolcoin"
+          coords="1787,266,1899,371"
+          shape="rect"
+        />
+      </map>
+    </div>
+
+    <div class="mobile">
+      <map name="image-map2" class="mobile">
+        <area
+          id="area4"
+          target=""
+          alt=""
+          title=""
+          href="#"
+          coords="951,38,1051,133"
+          shape="rect"
+        />
+        <area
+          id="area5"
+          target=""
+          alt=""
+          title=""
+          href="https://t.me/edgesolportal"
+          coords="950,159,1057,251"
+          shape="rect"
+        />
+        <area
+          id="area6"
+          target=""
+          alt=""
+          title=""
+          href="https://x.com/edgesolcoin"
+          coords="941,287,1059,385"
+          shape="rect"
+        />
+      </map>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+      integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw="
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/rwdImageMaps.js"></script>
+    <script>
+      $(document).ready(function (e) {
+        $("img[usemap]").rwdImageMaps();
+      });
+    </script>
+    <script src="/assets/js/app.js"></script>
+  </body>
+</html>
