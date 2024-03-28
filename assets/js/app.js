@@ -1,18 +1,37 @@
 
+const windowWidth = window.innerWidth;
+
 const styleBoxes = () => {
 
-    Array(6).fill(0).forEach((_, i) => {
-        const box = document.getElementById(`box${i + 1}`);
+    if (windowWidth > 1024) {
+        Array(4).fill(0).forEach((_, i) => {
+            const box = document.getElementById(`box${i + 1}`);
 
-        const area = document.getElementById(`area${i + 1}`);
+            const area = document.getElementById(`area${i + 1}`);
 
-        const coords = area.coords.split(",");
+            const coords = area.coords.split(",");
 
-        box.style.width = (Math.abs(coords[0] - coords[2])) + "px"
-        box.style.height = (Math.abs(coords[1] - coords[3])) + "px"
-        box.style.left = Number(coords[0]) + "px"
-        box.style.top = Number(coords[1]) + "px"
-    });
+            box.style.width = (Math.abs(coords[0] - coords[2])) + "px"
+            box.style.height = (Math.abs(coords[1] - coords[3])) + "px"
+            box.style.left = Number(coords[0]) + "px"
+            box.style.top = Number(coords[1]) + "px"
+        });
+    }
+
+    else {
+        Array(4).fill(0).forEach((_, i) => {
+            const box = document.getElementById(`box${i + 5}`);
+
+            const area = document.getElementById(`area${i + 5}`);
+
+            const coords = area.coords.split(",");
+
+            box.style.width = (Math.abs(coords[0] - coords[2])) + "px"
+            box.style.height = (Math.abs(coords[1] - coords[3])) + "px"
+            box.style.left = Number(coords[0]) + "px"
+            box.style.top = Number(coords[1]) + "px"
+        });
+    }
 
 }
 
